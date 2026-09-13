@@ -1,0 +1,3 @@
+DNS: Very long name	dns.qry.name && strlen(dns.qry.name) > 80
+DNS: Very long label	dns.qry.name matches "[A-Za-z0-9_-]{40,}"
+DNS: TXT heavy	dns.qry.type==16

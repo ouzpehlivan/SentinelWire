@@ -1,0 +1,5 @@
+DNS queries	dns.flags.response==0 && dns.qry.name
+TLS SNI	tls.handshake.extensions_server_name
+HTTP host	http.host
+Likely beacon candidates (filter after script)	dns.qry.name || tls.handshake.extensions_server_name || http.host
+Show packets for top IOC (manual paste)	frame contains "PASTE_IOC_HERE"

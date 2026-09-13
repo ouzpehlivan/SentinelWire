@@ -1,0 +1,5 @@
+LLMNR queries	llmnr && llmnr.flags.response==0
+LLMNR responses	llmnr && llmnr.flags.response==1
+NBNS queries	nbns && nbns.flags.response==0
+NBNS responses	nbns && nbns.flags.response==1
+Name resolution broadcast storm (heuristic)	(llmnr || nbns) && (eth.dst==ff:ff:ff:ff:ff:ff)

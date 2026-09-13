@@ -1,0 +1,5 @@
+MITM: ARP replies	arp.opcode==2
+MITM: Duplicate ARP replies	arp.opcode==2 && arp.dst.hw_mac==ff:ff:ff:ff:ff:ff
+MITM: ARP from non-router claiming router IP	arp && arp.src.proto_ipv4=={{ROUTER_IP}} && arp.src.hw_mac!={{ROUTER_MAC}}
+MITM: Gratuitous ARP	arp.isgratuitous==1
+MITM: Possible sniffing pivot	tcp && (tcp.len>0) && (ip.ttl<32 || ip.ttl>200)

@@ -1,0 +1,1 @@
+(dns.flags.response == 1 and dns.qry.name.len > 50)

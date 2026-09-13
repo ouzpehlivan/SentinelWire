@@ -1,0 +1,1 @@
+(eth.dst == {{MY_MAC}} and eth.src != {{ROUTER_MAC}})

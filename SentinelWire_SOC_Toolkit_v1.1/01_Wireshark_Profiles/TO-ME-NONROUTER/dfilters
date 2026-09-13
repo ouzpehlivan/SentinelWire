@@ -1,0 +1,3 @@
+Traffic to me (non-router src)	ip.dst=={{USER_IP}} && ip.src!={{ROUTER_IP}}
+Traffic from me (non-router dst)	ip.src=={{USER_IP}} && ip.dst!={{ROUTER_IP}}
+LAN peer-to-peer (exclude router)	ip.src!={{ROUTER_IP}} && ip.dst!={{ROUTER_IP}}

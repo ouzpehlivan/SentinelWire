@@ -1,0 +1,1 @@
+(arp.duplicate-address-detected) or (dns.qry.name.len > 50)

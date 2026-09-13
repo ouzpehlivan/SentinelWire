@@ -1,0 +1,4 @@
+ARP: Replies (opcode 2)	arp.opcode==2
+ARP: Router IP claimed by other MAC	arp && arp.src.proto_ipv4=={{ROUTER_IP}} && arp.src.hw_mac!={{ROUTER_MAC}}
+ARP: My IP claimed by other MAC	arp && arp.src.proto_ipv4=={{USER_IP}} && arp.src.hw_mac!={{USER_MAC}}
+ARP: Broadcast poisoning	arp.opcode==2 && eth.dst==ff:ff:ff:ff:ff:ff

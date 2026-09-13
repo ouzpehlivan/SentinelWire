@@ -1,0 +1,5 @@
+SMB/445 (internal)	tcp.port==445 && ip.src!={{ROUTER_IP}} && ip.dst!={{ROUTER_IP}}
+SMB: Session setup	smb2.cmd==1 || smb.cmd==0x73
+SMB: Tree connect	smb2.cmd==3
+SMB: File ops	smb2.cmd in {5 6 8 9} || smb.cmd in {0x2d 0x2e 0x2f}
+SMB: Errors	smb2.nt_status && smb2.nt_status != 0x00000000

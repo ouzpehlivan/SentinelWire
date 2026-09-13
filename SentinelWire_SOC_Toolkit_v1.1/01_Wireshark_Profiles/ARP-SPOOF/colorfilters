@@ -1,0 +1,7 @@
+# SentinelWire™ color filters (template)
+# Columns: Name\tDisplayFilter\tBG\tFG\tEnabled
+SW High Risk Beacon\t(dns.qry.name || tls.handshake.extensions_server_name)\t#ffefd5\t#000000\tTRUE
+SW MITM/ARP\tarp\t#ffe4e1\t#000000\tTRUE
+SW Lateral SMB\ttcp.port==445\t#e6e6fa\t#000000\tTRUE
+SW Name Res (LLMNR/NBNS)\t(llmnr || nbns)\t#e0ffff\t#000000\tTRUE
+SW SYN Scan\t(tcp.flags.syn==1 && tcp.flags.ack==0)\t#fafad2\t#000000\tTRUE

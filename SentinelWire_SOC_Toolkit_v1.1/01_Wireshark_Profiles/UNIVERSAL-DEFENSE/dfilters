@@ -1,0 +1,6 @@
+Triage: Suspicious DNS	dns && !(dns.qry.name matches "(?i)(microsoft|windowsupdate|apple|icloud|google|gstatic|cloudflare|akamai|fastly|amazonaws)\.")
+Triage: New TLS SNI	tls.handshake.extensions_server_name && !(tls.handshake.extensions_server_name matches "(?i)(microsoft|windows|office|google|gstatic|icloud|apple|cloudflare|akamai|fastly|amazonaws)")
+Triage: HTTP Host/UA	http.host || http.user_agent
+Triage: SYN only	tcp.flags.syn==1 && tcp.flags.ack==0
+Triage: To/From Me	ip.addr=={{USER_IP}}
+Triage: Not Router	ip.addr!={{ROUTER_IP}}

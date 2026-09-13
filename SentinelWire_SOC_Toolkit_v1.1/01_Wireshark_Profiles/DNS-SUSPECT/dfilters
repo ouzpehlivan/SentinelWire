@@ -1,0 +1,4 @@
+DNS: All queries	dns.flags.response==0 && dns.qry.name
+DNS: NXDOMAIN	dns.flags.rcode==3
+DNS: Unusual QTYPE	dns.qry.type not in {1 28 5 15 16 33 12}
+DNS: High entropy label (heuristic)	dns.qry.name matches "[a-z0-9]{20,}"

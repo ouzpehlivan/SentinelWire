@@ -1,0 +1,4 @@
+TCP: SYN only	tcp.flags.syn==1 && tcp.flags.ack==0
+TCP: Xmas/Null scans	(tcp.flags.fin==1 && tcp.flags.psh==1 && tcp.flags.urg==1) || (tcp.flags==0)
+TCP: Many resets	tcp.flags.reset==1
+TCP: Uncommon flags	tcp.flags.syn==1 && tcp.flags.fin==1

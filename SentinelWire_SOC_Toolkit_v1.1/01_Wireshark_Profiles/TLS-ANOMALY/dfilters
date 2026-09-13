@@ -1,0 +1,5 @@
+TLS: Handshake	tls.handshake
+TLS: SNI present	tls.handshake.extensions_server_name
+TLS: No SNI (client hello)	tls.handshake.type==1 && !tls.handshake.extensions_server_name
+TLS: Weak/old version	tls.record.version == 0x0301 || tls.record.version == 0x0300
+TLS: Certificate issues (basic)	x509sat.printableString || x509af.utcTime

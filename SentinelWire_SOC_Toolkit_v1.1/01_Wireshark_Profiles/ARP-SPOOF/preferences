@@ -1,0 +1,12 @@
+# SentinelWire™ Wireshark Profile: ARP-SPOOF
+# This is a template profile folder. Copy to:
+#   %APPDATA%\Wireshark\profiles\ARP-SPOOF
+# Placeholders used for personalization:
+#   USER_IP={{USER_IP}}
+#   ROUTER_IP={{ROUTER_IP}}
+#   USER_MAC={{USER_MAC}}
+#   ROUTER_MAC={{ROUTER_MAC}}
+#
+# Notes:
+# - Display filter presets are stored in 'dfilters'
+# - Coloring rules are stored in 'colorfilters'
